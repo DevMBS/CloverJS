@@ -37,3 +37,4 @@
     console.log(clover.color());
   #### 2.9 Landing:
     clover.land();
+### Code example - test.js
