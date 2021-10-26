@@ -1,9 +1,9 @@
 # CloverJS
 ## This library allows you to program autonomous flight for the COEX Clover quadcopter in JavaScript language and you can perform almost all the tasks described in the <a href = 'https://clover.coex.tech'>Clover's documentation</a> with alternative commands in the JS.
-## Pros:
-### The library has built-in color and QR code recognition with one command. 
-### You can easily create user interfaces for your programs and use unique JS libraries. 
-### The amount of code written in JS with my library for the most common tasks is significantly less compared to the amount of code in Python written for the same task
+### Pros:
+#### The library has built-in color and QR code recognition with one command. 
+#### You can easily create user interfaces for your programs and use unique JS libraries. 
+#### The amount of code written in JS with my library for the most common tasks is significantly less compared to the amount of code in Python written for the same task
 <hr/>
 
 
