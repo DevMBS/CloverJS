@@ -7,7 +7,7 @@
 <hr/>
 
 
-### How to use:
+## How to use:
 ### 1. Installation:<br/>
   #### 1.1 Download this repository to Clover's RaspberryPI, unzip and open folder CloverJS, then open console<br/>
   #### 1.2 Check if NodeJS is installed (type <code>npm -v</code> in your console, output should be like <code>6.4.1</code>)<br/>
