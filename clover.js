@@ -24,10 +24,10 @@ const land = function(){
     run(`rosservice call /land "{}"`);
 }
 const get_range = function(){
-   run('python ./range.py');
+   run('python ./helpers/range.py');
 }
 const range = function(){
-    return fs.readFileSync('rdata.txt');
+    return fs.readFileSync('./helpers/rdata.txt');
 }
 const led = function(effect = '', r = 0, g = 0, b = 0){
     if (effect == 'rainbow'){
@@ -38,16 +38,16 @@ const led = function(effect = '', r = 0, g = 0, b = 0){
     }
 }
 const get_color = function(){
-   run('python ./color.py');
+   run('python ./helpers/color.py');
 }
 const color = function(){
-    return fs.readFileSync('cdata.txt');
+    return fs.readFileSync('./helpers/cdata.txt');
 }
 const get_qr = function(){
-    run('python ./qr.py');
+    run('python ./helpers/qr.py');
 }
 const qr = function(){
-    return fs.readFileSync('qdata.txt');
+    return fs.readFileSync('./helpers/qdata.txt');
 }
 const get_telemetry = function(){
     exec(`rosservice call /get_telemetry "{frame_id: ''}"`, (error, stdout, stderr) => {
@@ -57,11 +57,11 @@ const get_telemetry = function(){
         if (stderr) {
             return;
         }
-        fs.writeFile('tdata.txt', stdout, function(error){if(error) throw error;});
+        fs.writeFile('./helpers/tdata.txt', stdout, function(error){if(error) throw error;});
     });
 }
 const telemetry = function(){
-    return fs.readFileSync('tdata.txt');
+    return fs.readFileSync('./helpers/tdata.txt');
 }
 const navigate_global = function(lat, lon, z, yaw, yaw_rate, speed, frame_id, auto_arm){
     run(`rosservice call /navigate_global "{lat: ${lat}, lon: ${lon}, z: ${(z).toFixed(1)}, yaw: ${(yaw).toFixed(1)}, yaw_rate: ${(yaw_rate).toFixed(1)}, speed: ${(speed).toFixed(1)}, frame_id: '${frame_id}', auto_arm: ${auto_arm}}"`);
