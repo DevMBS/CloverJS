@@ -40,6 +40,8 @@
   #### 2.8 Determine the color:
     clover.get_color();
     console.log(clover.color());
-  #### 2.9 Landing:
+  #### 2.9 Global Navigate:
+    clover.navigate_global(lat=55.707033, lon=37.725010, z=0, speed=5, frame_id='body'); //navigate to some coordinates
+  #### 2.10 Landing:
     clover.land();
 ### Code example - test.js
