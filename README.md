@@ -1,10 +1,15 @@
 # CloverJS
-## Code your Clover in JavaScript!
+## This library allows you to program autonomous flight for the COEX Clover quadcopter in JavaScript language and you can perform almost all the tasks described in the <a href = 'https://clover.coex.tech'>Clover's documentation</a> with alternative commands in the JS.
+## Pros:
+### The library has built-in color and QR code recognition with one command. 
+### You can easily create user interfaces for your programs and use unique JS libraries. 
+### The amount of code written in JS with my library for the most common tasks is significantly less compared to the amount of code in Python written for the same task
+<hr/>
 
 
 ### How to use:
 ### 1. Installation:<br/>
-  #### 1.1 Download this repository, unzip and open folder CloverJS, then open console<br/>
+  #### 1.1 Download this repository to Clover's RaspberryPI, unzip and open folder CloverJS, then open console<br/>
   #### 1.2 Check if NodeJS is installed (type <code>npm -v</code> in your console, output should be like <code>6.4.1</code>)<br/>
   #### 1.3 Type <code>npm install child_process fs</code><br/>
   #### 1.4 Type <code>pip install pyzbar</code><br/>
